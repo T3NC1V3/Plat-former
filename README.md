@@ -9,3 +9,5 @@ Just a simple 3D platformer.
   Assets from https://quaternius.com
     
   Basic code from INFR 1110 - Programming for Games II. WILL CHANGE
+  
+  EXE is in zip
