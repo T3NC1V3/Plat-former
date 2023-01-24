@@ -6,4 +6,4 @@ Just a simple 3D platformer.
   
   Assets from https://quaternius.com
     
-  Basic code from Lab 1 of INFR 1110 - Programming for Games II
+  Basic code from Lab 1 of INFR 1110 - Programming for Games II. WILL CHANGE
