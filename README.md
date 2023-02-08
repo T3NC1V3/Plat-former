@@ -2,7 +2,7 @@
 
 Just a simple 3D platformer. 
   
-  For Lab 1-
+  Updated For Lab3, some scripts are for reference-
 
   A work in progress
   
