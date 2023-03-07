@@ -1,4 +1,3 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,6 +48,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
 
         distanceToGround = GetComponent<Collider>().bounds.extents.y;
+
         cameraRotation = new Vector3(transform.rotation.x, transform.rotation.y, transform.rotation.z);
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         cameraRotation = new Vector3(cameraRotation.x + rotate.y, cameraRotation.y + rotate.x, cameraRotation.z);
         transform.eulerAngles = new Vector3(transform.rotation.x, cameraRotation.y, transform.rotation.z);
+
         transform.Translate(Vector3.forward * move.y * Time.deltaTime * walkSpeed, Space.Self);
         transform.Translate(Vector3.right * move.x * Time.deltaTime * walkSpeed, Space.Self);
 

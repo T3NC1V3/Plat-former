@@ -24,12 +24,12 @@ public class PlayerHealthUI : MonoBehaviour
 
     void OnHealthChanged(int maxHealth, int currentHealth)
     {
-        if(ui != null)
+        if (ui != null)
         {
             float healthPercent = (float)currentHealth / maxHealth;
             healthSlider.fillAmount = healthPercent;
 
-            if(currentHealth <= 0)
+            if (currentHealth <= 0)
             {
                 Destroy(ui.gameObject);
             }

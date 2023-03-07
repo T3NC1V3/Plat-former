@@ -25,7 +25,7 @@ public class CharacterStats : MonoBehaviour
 
         currentHealth -= damage;
 
-        if(OnHealthChanged != null)
+        if (OnHealthChanged != null)
         {
             OnHealthChanged(maxHealth, currentHealth);
         }
@@ -35,6 +35,7 @@ public class CharacterStats : MonoBehaviour
             Die();
         }
     }
+
     public virtual void Die()
     {
         Debug.Log(transform.name + " died!");

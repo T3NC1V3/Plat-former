@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/_Scripts/PlayerAction.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/PlayerAction.inputactions'
 
 using System;
 using System.Collections;
@@ -16,12 +16,12 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     ""maps"": [
         {
             ""name"": ""Player"",
-            ""id"": ""b30a15f3-75aa-471f-9872-a03df55f35aa"",
+            ""id"": ""087fa2f1-ef93-4010-a1d6-1d6aeb4ff3c8"",
             ""actions"": [
                 {
                     ""name"": ""Move"",
                     ""type"": ""Value"",
-                    ""id"": ""2c073afd-9c11-412e-b696-1727dd42327e"",
+                    ""id"": ""c1bc1890-0250-4a53-ac05-68022ae30b78"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -29,7 +29,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
-                    ""id"": ""44f855f5-2600-4fb1-ab5d-16b6822f284e"",
+                    ""id"": ""0e9bcc21-8dd2-41b2-8b97-c77ba46cf80d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -37,7 +37,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Look"",
                     ""type"": ""Value"",
-                    ""id"": ""1c9d1a1c-0799-4b29-b9a0-5dc57adf70d3"",
+                    ""id"": ""f218b1b4-27a8-4d89-ab88-2bdd53808906"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -45,7 +45,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Shoot"",
                     ""type"": ""Button"",
-                    ""id"": ""bf352edf-236f-4d77-b57e-872372788c6d"",
+                    ""id"": ""6f6355f6-b417-4592-bd81-28ed38a28939"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -53,7 +53,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": ""TakeDamage"",
                     ""type"": ""Button"",
-                    ""id"": ""3fca2d90-90a3-4bd4-81c2-fb0e86166b95"",
+                    ""id"": ""59d1d57f-9561-45fc-89e3-5ff3ebe43e0d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -62,7 +62,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""2D Vector"",
-                    ""id"": ""92bf2fc8-7410-4825-83fc-e9c6847181a0"",
+                    ""id"": ""df257201-3a4e-4da8-bc60-50e028e7bf95"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -73,84 +73,84 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""96b1f73d-f97d-46e2-8cd3-48dd03bbfe16"",
+                    ""id"": ""97bad6e6-8269-48e8-bd8b-29283e3a6c16"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""4ab853ed-39e2-4318-b76b-293a58ca5acb"",
+                    ""id"": ""ce8cd43d-631f-4f71-ab15-89854e0dd1d4"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""d76dde11-0f83-4aec-8a5d-db959840c8f8"",
+                    ""id"": ""f2679db4-56f4-4e81-9b29-04b86c4d495c"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""2af79439-7e52-4549-b165-eedf9c3fbfcc"",
+                    ""id"": ""605c1642-2701-4364-95fa-0f1feb775a52"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
-                    ""id"": ""df10e16d-75a7-47f7-bff1-8ecae7f129d7"",
+                    ""id"": ""c22732aa-8760-479d-b9d5-7c73165ac1b7"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""302a460e-c1db-42e4-a1d4-66ea7929d11d"",
+                    ""id"": ""ba266f0b-2879-47b1-aeca-1ce83e089ac2"",
                     ""path"": ""<Pointer>/delta"",
                     ""interactions"": """",
-                    ""processors"": ""InvertVector2(invertX=false),ScaleVector2(x=0.03,y=0.03)"",
-                    ""groups"": """",
+                    ""processors"": ""InvertVector2(invertX=false)"",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""61586692-9a5c-4bd6-86b7-0e3fb1376016"",
+                    ""id"": ""dbfeed6b-af81-467d-845b-04d35fdf0778"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""New control scheme"",
                     ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6703bc7a-ab8d-4481-b57d-a575c532a1cc"",
+                    ""id"": ""c4f4305a-ff2a-47a4-a523-1eda751b0425"",
                     ""path"": ""<Keyboard>/g"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -162,7 +162,13 @@ public class @PlayerAction : IInputActionCollection, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""New control scheme"",
+            ""bindingGroup"": ""New control scheme"",
+            ""devices"": []
+        }
+    ]
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
@@ -281,6 +287,15 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+    private int m_NewcontrolschemeSchemeIndex = -1;
+    public InputControlScheme NewcontrolschemeScheme
+    {
+        get
+        {
+            if (m_NewcontrolschemeSchemeIndex == -1) m_NewcontrolschemeSchemeIndex = asset.FindControlSchemeIndex("New control scheme");
+            return asset.controlSchemes[m_NewcontrolschemeSchemeIndex];
+        }
+    }
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
