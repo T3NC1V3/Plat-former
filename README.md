@@ -2,9 +2,9 @@
 
 Just a simple 3D platformer. 
   
-  Updated For Lab4,  most scripts are for reference-
+  Updated For Lab 6,  most scripts are for reference-
 
-  A work in progress, HP Bar not working YET
+  A work in progress
   
   Assets from https://quaternius.com
     
