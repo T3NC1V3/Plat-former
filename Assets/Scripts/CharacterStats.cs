@@ -5,19 +5,19 @@ using UnityEngine;
 public class CharacterStats : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth;
 
+    private int currentHealth;
+    // C# property
     public int CurrentHealth
-    { 
-        get 
-        { 
+    {
+        get
+        {
             return currentHealth;
         }
-      //  set
-      //  {
-      //      currentHealth = value;
-      //  }
-    
+
+        // set{
+        //     currentHealth = value;
+        // }
     }
 
     public int damage;
@@ -54,8 +54,10 @@ public class CharacterStats : MonoBehaviour
     public virtual void RestoreHealth(int restore)
     {
         // currentHealth += restore;
-        // Anti overheal
-        currentHealth = Mathf.Clamp(currentHealth + restore, 0, int.MaxValue);
+        // Make sure to not have health above max health
+        currentHealth = Mathf.Clamp(currentHealth + restore, 0, maxHealth);
+
+        Debug.Log(currentHealth);
 
         if (OnHealthChanged != null)
         {
@@ -67,7 +69,7 @@ public class CharacterStats : MonoBehaviour
     {
         Debug.Log("Start Coroutine");
 
-        for(int x = 1; x <=maxHealth; x++) 
+        for (int x = 1; x <= maxHealth; x++)
         {
             currentHealth = x;
             if (OnHealthChanged != null)
@@ -76,9 +78,11 @@ public class CharacterStats : MonoBehaviour
             }
 
             yield return new WaitForSeconds(0.01f);
+            Debug.Log("HP: " + currentHealth + " / " + maxHealth);
         }
 
-        
+        Debug.Log("The current health is " + currentHealth);
+        Debug.Log("End Coroutine");
     }
 
     public virtual void Die()
