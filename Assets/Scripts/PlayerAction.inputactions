@@ -44,14 +44,6 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "RestoreHP",
-                    "type": "Button",
-                    "id": "22978622-7afb-4b6b-9fca-318a31175777",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -151,17 +143,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "TakeDamage",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "55d4527c-ab06-4fcb-9548-650f0f5bd7be",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RestoreHP",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

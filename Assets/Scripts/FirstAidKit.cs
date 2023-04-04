@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class FirstAidKit : MonoBehaviour
 {
-    // private Collectable heart;
+    private Collectable heart;
 
     private void Start()
     {
-        // heart = new Collectable("heart", 0, 5);
+        heart = new Collectable("heart", 0, 5);
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if(other.collider.tag == "Player")
         {
-            // heart.UpdateHealth();
-            Inventory.inventory.consumableItemsController.GetItem("Heart").PurchaseItem();
+            heart.UpdateHealth();
             Destroy(gameObject);
         }
     }
