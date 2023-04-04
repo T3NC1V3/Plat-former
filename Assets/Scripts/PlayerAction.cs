@@ -57,6 +57,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""RestoreHP"",
+                    ""type"": ""Button"",
+                    ""id"": ""22978622-7afb-4b6b-9fca-318a31175777"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -158,6 +166,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""TakeDamage"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""55d4527c-ab06-4fcb-9548-650f0f5bd7be"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RestoreHP"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -177,6 +196,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_TakeDamage = m_Player.FindAction("TakeDamage", throwIfNotFound: true);
+        m_Player_RestoreHP = m_Player.FindAction("RestoreHP", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -231,6 +251,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_TakeDamage;
+    private readonly InputAction m_Player_RestoreHP;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -240,6 +261,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @TakeDamage => m_Wrapper.m_Player_TakeDamage;
+        public InputAction @RestoreHP => m_Wrapper.m_Player_RestoreHP;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -264,6 +286,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @TakeDamage.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTakeDamage;
                 @TakeDamage.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTakeDamage;
                 @TakeDamage.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTakeDamage;
+                @RestoreHP.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestoreHP;
+                @RestoreHP.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestoreHP;
+                @RestoreHP.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestoreHP;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -283,6 +308,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @TakeDamage.started += instance.OnTakeDamage;
                 @TakeDamage.performed += instance.OnTakeDamage;
                 @TakeDamage.canceled += instance.OnTakeDamage;
+                @RestoreHP.started += instance.OnRestoreHP;
+                @RestoreHP.performed += instance.OnRestoreHP;
+                @RestoreHP.canceled += instance.OnRestoreHP;
             }
         }
     }
@@ -303,5 +331,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
         void OnTakeDamage(InputAction.CallbackContext context);
+        void OnRestoreHP(InputAction.CallbackContext context);
     }
 }
