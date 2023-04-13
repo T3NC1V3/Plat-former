@@ -15,7 +15,8 @@ public class Coin : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            coin.UpdateScore();
+            // coin.UpdateScore();
+            Inventory.inventory.nonConsumableItemsController.UseItem("Coin");
             Destroy(gameObject);
         }
     }

@@ -15,7 +15,8 @@ public class FirstAidKit : MonoBehaviour
     {
         if(other.collider.tag == "Player")
         {
-            heart.UpdateHealth();
+            // heart.UpdateHealth();
+            Inventory.inventory.consumableItemsController.GetItem("Heart").PurchaseItem();
             Destroy(gameObject);
         }
     }
